@@ -37,13 +37,23 @@
 ### Week 1 (2026-09-16 至 2026-09-22)
 
 **本周目标：**
-- [ ] 安装 Ubuntu 22.04 双系统
+- [ ] 安装 Ubuntu 22.04 双系统（⚠️ 等待 RTX 4060 电脑到货，预计 9/17）
 - [ ] 安装 NVIDIA 驱动（nvidia-smi 成功）
 - [ ] 安装 Conda 环境
 - [ ] 安装 PyTorch + CUDA
 - [ ] 安装 Isaac Gym
 - [ ] 运行 Isaac Gym 官方 Demo
 - [ ] 拉取 OpenDuck 代码
+
+**准备工作（可在临时电脑完成）：**
+- [x] 下载 Ubuntu 22.04.3 LTS ISO
+- [x] 制作 Ubuntu 启动盘（Rufus）
+- [x] 准备双系统分区方案（200GB）
+- [x] 准备 BIOS 配置清单
+- [x] 备份 Windows 数据
+- [ ] 阅读 Isaac Gym 安装文档
+- [ ] 阅读 OpenDuck 环境要求
+
 
 **实际进展：**
 
