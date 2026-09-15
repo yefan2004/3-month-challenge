@@ -1,2 +1,137 @@
-# 3-month-challenge
-我的3个月机器人技术冲刺挑战：OpenDuck强化学习 + AI AGV优化 + 面试冲刺 | My 3-month robotics challenge: OpenDuck RL + AI AGV optimization + Job hunting
+# 3个月机器人技术冲刺挑战 | 3-Month Robotics Challenge
+
+> 📅 开始日期：2026年9月16日  
+> 📅 结束日期：2026年12月15日  
+> 👤 挑战者：Leo Zhang  
+> 🎯 目标：从现场FAE转型为机器人软件工程师
+
+---
+
+## 🎯 挑战目标
+
+在未来3个月内完成以下三个核心目标：
+
+### ✅ 目标 1：OpenDuck 强化学习训练
+- 完成 Isaac Gym 环境搭建
+- 训练出比官方预训练模型更优的步态
+- 开源完整代码和技术文档
+- 发布技术博客，阅读量 > 500
+
+### ✅ 目标 2：AI AGV 系统优化
+- 建立完整性能基线
+- MoveIt 规划耗时降低 50% 以上
+- 建立自动化测试，覆盖率 > 60%
+- 输出可量化的优化报告
+
+### ✅ 目标 3：面试冲刺
+- 投递 50 家机器人公司
+- 获得至少 5 个面试机会
+- 拿到至少 1 个 18K+ offer
+
+---
+
+## 📊 进度追踪
+
+**当前状态：** 🟡 进行中
+
+**完成度：** 0% (0/12 周)
+
+| 阶段 | 周数 | 核心任务 | 状态 | 完成日期 |
+|---|---|---|---|---|
+| **Month 1** | Week 1 | Ubuntu双系统 + Isaac Gym | 🔵 进行中 | - |
+| | Week 2 | OpenDuck 预训练模型 + 遥控 | ⚪ 未开始 | - |
+| | Week 3 | 自定义训练 + Reward调优 | ⚪ 未开始 | - |
+| | Week 4 | 总结发布 + 技术博客 | ⚪ 未开始 | - |
+| **Month 2** | Week 5 | AI AGV 性能基线 | ⚪ 未开始 | - |
+| | Week 6-7 | MoveIt 规划优化 | ⚪ 未开始 | - |
+| | Week 8 | 自动化测试 | ⚪ 未开始 | - |
+| **Month 3** | Week 9 | 整理作品集 + GitHub | ⚪ 未开始 | - |
+| | Week 10-11 | 密集投递 + 面试 | ⚪ 未开始 | - |
+| | Week 12 | 最终决策 | ⚪ 未开始 | - |
+
+---
+
+## 📝 每周更新
+
+### Week 1 (2026-09-16 至 2026-09-23)
+
+**本周目标：**
+- [ ] 安装 Ubuntu 22.04 双系统
+- [ ] 安装 CUDA + cuDNN + TensorRT
+- [ ] 安装 Isaac Gym
+- [ ] 运行官方 Demo
+
+**实际进展：**
+- ✅ 2026-09-16: 创建 GitHub 仓库
+- 🔄 进行中...
+
+**遇到的问题：**
+- 待更新
+
+**下周计划：**
+- 待更新
+
+---
+
+## 📚 技术栈
+
+**已掌握：**
+- Python、ROS2、Docker
+- Jetson Xavier NX、TensorRT
+- OpenCV、CUDA
+- MoveIt 2、OMPL
+- Basler/RealSense 相机
+
+**正在学习：**
+- Isaac Gym、强化学习
+- PyTorch、ONNX
+- 运动规划优化
+- 自动化测试
+
+---
+
+## 📖 相关资源
+
+**项目：**
+- [OpenDuck Mini](https://github.com/TJU-DRL-LAB/OpenDuckMini)
+- AI AGV 系统（部分开源，待整理）
+
+**博客：**
+- 待发布
+
+**视频：**
+- 待录制
+
+---
+
+## 🤝 监督与反馈
+
+**监督人：** Allen 
+
+**公开承诺：**
+如果 2026 年 12 月 15 日未完成上述目标，我将在所有平台公开道歉并复盘失败原因。
+
+**进度更新频率：** 每周五晚 10 点
+
+**社区监督：**
+如果你发现我连续 3 天未更新进度，请在 [Issues](../../issues) 提醒我。
+
+---
+
+## 📫 联系方式
+
+- GitHub: [@leo-zhang-ai](https://github.com/leo-zhang-ai)
+- Email: [2604065068@qq.com]
+- 知乎: [待补充]
+- LinkedIn: [待补充]
+
+---
+
+## 📜 License
+
+MIT License
+
+---
+
+**最后更新：** 2026-09-16  
+**挑战状态：** 🔥 进行中
