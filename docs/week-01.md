@@ -12,7 +12,7 @@
 
 - [x] D1.1 零指令站立可重复（约 10 s，已验证）
 - [x] D1.2 前进指令下有迈步录像（2026-09-17：`3dc578a553e74700278ed17140e423dd_raw.mp4`，13 s 屏录；schedule 仅 3–6 s 为 `command[0]=0.15`）
-- [ ] README 写清「怎么让它走」（按键与预期）
+- [x] README 写清「怎么让它走」（`scripts/run_walk.sh` / `command[0]=0.15`）
 - [ ] `docs/model-match.md` 能讲清 101 / 14、为何不能接 Mini `scene.xml`
 
 ## 本周不要做

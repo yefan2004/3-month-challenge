@@ -61,31 +61,44 @@ cd 3-month-challenge
 chmod +x scripts/run_infer.sh
 ```
 
-### 运行
+### 怎么让它走
+
+策略吃的是 **7 维 command**。零指令（全 0）只站着；**`command[0] = +0.15` 是前进**。这就是录像里鸭子迈步的原因，不是换模型、也不是按错仿真器。
+
+D1.2 那条录像用的是定时指令，不是手按上箭头：
+
+| 仿真时间 | command | 预期 |
+|---|---|---|
+| 0–3 s | `[0, 0, 0, 0, 0, 0, 0]` | 站立 |
+| 3–6 s | **`[0.15, 0, 0, 0, 0, 0, 0]`** | 前进迈步 |
+| 6–8 s | 全 0 | 再站住，然后结束 |
+
+在 WSL2（已装好 Playground + 官方 ONNX）里：
+
+```bash
+cd ~/3-month-challenge   # 或本仓库路径
+chmod +x scripts/run_walk.sh
+./scripts/run_walk.sh
+```
+
+等价于录像里的命令（把仓库路径换成你的）：
+
+```bash
+export DISPLAY=:0 MUJOCO_GL=glfw
+export OPEN_DUCK_PLAYGROUND=~/Open_Duck_Playground
+export OPEN_DUCK_MINI=~/Open_Duck_Mini
+~/env_duck_playground/bin/python ~/3-month-challenge/scripts/run_openduck_eval.py
+```
+
+终端应打印 `obs shape: (101,)`、`action shape: (14,)`、`actuator count: 14`，以及上面那张 schedule。日志默认写到 `~/openduck_eval.csv`。
+
+**不要**用 `Open_Duck_Mini/.../scene.xml` 播这份 ONNX（16 个执行器，对不上）。
+
+交互试玩（不写死 schedule）仍可用官方查看器，上箭头一般对应前进，以 Playground 按键为准：
 
 ```bash
 ./scripts/run_infer.sh
 ```
-
-等价：
-
-```bash
-cd ~/Open_Duck_Playground
-uv run playground/open_duck_mini_v2/mujoco_infer.py \
-  -o ~/Open_Duck_Mini/BEST_WALK_ONNX_2.onnx
-```
-
-`./scripts/run_infer.sh --help` 查看路径环境变量。
-
-| 操作 | 预期 |
-|---|---|
-| 启动后、零指令 | 站立不倒 |
-| 查看器上箭头 | `command[0] = +0.15`，应迈步 |
-| 下 / 左 / 右箭头 | 后退 / 左移 / 右移（以 Playground 按键为准） |
-
-查看器关闭时进程可能非零退出（WSLg/GLFW）。站立阶段无 Python traceback 则不视为策略加载失败。
-
-已测：观测 `(101,)`，动作 `(14,)`，MJCF `scene_flat_terrain.xml`，50 Hz，`action_scale=0.25`。零指令 10 s 站立，XY 位移约 1 cm（符合零速度）。
 
 ---
 
@@ -118,7 +131,9 @@ docs/project-plan.md      项目计划书（D1 / D2 / 实机）
 docs/week-01.md           Week 1 任务清单
 docs/model-match.md       14 执行器 vs 16 执行器
 docs/hardware.md          真机检查清单与命令
-scripts/run_infer.sh      仿真播放入口
+scripts/run_infer.sh      交互查看器入口
+scripts/run_walk.sh       D1.2 行走（定时 command[0]=0.15）
+scripts/run_openduck_eval.py
 ```
 
 不包含：其它业务系统、Isaac 工程、训练权重、飞书全文镜像。
