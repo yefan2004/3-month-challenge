@@ -14,6 +14,11 @@
 
 本仓库只含本项目。
 
+每周任务清单（Issue 同步）：
+
+- [Week 1（09-16 ～ 09-22）](week-01.md) · [Issue #1](https://github.com/yefan2004/3-month-challenge/issues/1)
+
+
 ---
 
 ## 1. 要解决什么问题

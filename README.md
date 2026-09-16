@@ -7,6 +7,7 @@
 本仓库是运行说明、启动脚本和项目计划，不含上游仿真器源码，不含其它业务系统。
 
 项目计划：[docs/project-plan.md](docs/project-plan.md)  
+Week 1 清单：[docs/week-01.md](docs/week-01.md) · [Issue #1](https://github.com/yefan2004/3-month-challenge/issues/1)  
 接口说明：[docs/model-match.md](docs/model-match.md)  
 真机步骤：[docs/hardware.md](docs/hardware.md)
 
@@ -114,6 +115,7 @@ python v2_rl_walk_mujoco.py --onnx_model_path ~/BEST_WALK_ONNX_2.onnx
 ```text
 README.md                 本说明
 docs/project-plan.md      项目计划书（D1 / D2 / 实机）
+docs/week-01.md           Week 1 任务清单
 docs/model-match.md       14 执行器 vs 16 执行器
 docs/hardware.md          真机检查清单与命令
 scripts/run_infer.sh      仿真播放入口
