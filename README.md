@@ -20,7 +20,7 @@ Week 1 清单：[docs/week-01.md](docs/week-01.md) · [Issue #1](https://github.
 | 阶段 | 状态 |
 |---|---|
 | D1.1 仿真零指令站立 | 已验证（约 10 s） |
-| D1.2 仿真前进行走 | 未交付录像（今晚只做这件事） |
+| D1.2 仿真前进行走 | 已有录像（13 s 屏录）。日志：`command[0]=0.15` 仅 3–6 s；Playground + `BEST_WALK_ONNX_2.onnx`，obs 101 / act 14 |
 | D1.3 接口文档 | [docs/model-match.md](docs/model-match.md) 已有初稿 |
 | D2 启动脚本 | `scripts/run_infer.sh` 可启动；维数断言与运行日志未完成 |
 | HW 真机 | 未到件。路径：**买零件 + 自主组装**，不买成品整机。零件付款截止 2026-10-06；未付款则 HW 冻结 |
