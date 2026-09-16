@@ -216,3 +216,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local simulation installs and large artifacts
+isaacsim/
+IsaacSim/
+*.zip
+*.tar.gz
+weights/
+*.pt
+*.onnx
+*.usd
+*.usda
+nvidia-smi*.txt
